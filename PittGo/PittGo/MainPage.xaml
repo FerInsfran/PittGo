@@ -6,8 +6,20 @@
              x:Class="PittGo.MainPage">
 
     <StackLayout>
-        
-        
+
+        <Label Text="Welcome to PittGo!"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+
+
+        <Label Text="Create an Account"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+
 
 
 
