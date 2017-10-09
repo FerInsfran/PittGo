@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PittGo.country">
+    <ContentPage.Content>
+        <StackLayout
+            Spacing="5"
+            Padding="5">
+            <Label Text="Select Country" 
+             FontSize="30"
+             FontAttributes="Bold"/>
+            <Grid>
+                <Grid.RowDefinations>
+                    <RowDefination Height="*"/>
+                    <RowDefination Height="*"/>
+                </Grid.RowDefinations>
+                <Grid.ColumnDefination>
+                    <Cloumn.Defination Width="*"/>
+                    <Cloumn.Defination Width="*"/>
+                </Grid.ColumnDefination>
+                <Label Text="INDIA" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="PARAGUAY" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="CHINA" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="SAUDI ARABIA" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
