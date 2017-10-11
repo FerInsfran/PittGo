@@ -13,5 +13,9 @@ namespace PittGo
         {
             InitializeComponent();
         }
+        private void countryButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new country());
+        }
     }
 }

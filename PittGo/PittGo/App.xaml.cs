@@ -13,7 +13,7 @@ namespace PittGo
         {
             InitializeComponent();
 
-            MainPage = new PittGo.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
