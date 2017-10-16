@@ -16,5 +16,25 @@ namespace PittGo
         {
             InitializeComponent();
         }
+
+        private void TapGestureRecognizer_Tapped_INDIA(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new institutionpage("INDIA"));
+        }
+
+        private void TapGestureRecognizer_Tapped_PARAGUAY(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new institutionpage("PARAGUAY"));
+        }
+
+        private void TapGestureRecognizer_Tapped_CHINA(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new institutionpage("CHINA"));
+        }
+
+        private void TapGestureRecognizer_Tapped_SAUDIARABIA(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new institutionpage("SAUDIARABIA"));
+        }
     }
 }

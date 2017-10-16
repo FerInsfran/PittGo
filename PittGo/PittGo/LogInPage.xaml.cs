@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace PittGo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class institutionpage : ContentPage
+    public partial class LogInPage : ContentPage
     {
-        public institutionpage(String country )
+        public LogInPage()
         {
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void countryButton_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new country());
+            Navigation.PushAsync(new country());
         }
     }
 }

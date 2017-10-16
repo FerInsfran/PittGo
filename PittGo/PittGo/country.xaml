@@ -13,8 +13,10 @@
              FontAttributes="Bold"/>
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="12"/>
                     <RowDefinition Height="25"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
                     <RowDefinition Height="25"/>
                     <RowDefinition Height="*"/>
                 
@@ -26,17 +28,38 @@
                     
                 </Grid.ColumnDefinitions>
                 <Image Source="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/512/India-icon.png"
-                Grid.Row="1" Grid.Column="0"/>
+                Grid.Row="2" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_INDIA" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
                 <Image Source="http://www.myiconfinder.com/uploads/iconsets/4ffb7a800bf246f04d022ac9cc81495e-Paraguay.png"
-                       Grid.Row="1" Grid.Column="1"/>
+                       Grid.Row="2" Grid.Column="1">
+              <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_PARAGUAY" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+
                 <Image Source="http://www.myiconfinder.com/uploads/iconsets/32d3874f0eff8680107e101e2b2ad64d.png"
-                       Grid.Row="3" Grid.Column="0"/>
+                       Grid.Row="5" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_CHINA" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
                 <Image Source="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/512/Saudi-arabia-icon.png"
-                       Grid.Row="3" Grid.Column="1"/>
-                <Label Text="INDIA" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
-                <Label Text="PARAGUAY" TextColor="Black" FontAttributes="Bold"  Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
-                <Label Text="CHINA" TextColor="Black" FontAttributes="Bold"  Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
-                <Label Text="SAUDI ARABIA" TextColor="Black" FontAttributes="Bold" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+                       Grid.Row="5" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_SAUDIARABIA" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                
+                <Label Text="INDIA" TextColor="Black" FontSize="18"  FontAttributes="Bold" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+                <Label Text="PARAGUAY" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+                <Label Text="CHINA" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"/>
+                <Label Text="SAUDI ARABIA" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
