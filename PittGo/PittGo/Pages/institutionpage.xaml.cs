@@ -12,7 +12,7 @@ namespace PittGo
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class institutionpage : ContentPage
     {
-        public institutionpage()
+        public institutionpage(String country )
         {
             InitializeComponent();
         }
