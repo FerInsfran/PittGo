@@ -13,9 +13,16 @@ namespace PittGo
         {
             InitializeComponent();
         }
-        private void countryButton_Clicked(object sender, EventArgs e)
+       
+
+        private void SignUpButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new country());
+            Navigation.PushAsync(new SignUpPage());
+        }
+
+        private void LogInButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LogInPage());
         }
     }
 }

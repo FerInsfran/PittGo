@@ -2,28 +2,62 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PittGo"
-             Title=" Create a Profile" 
+             Title=" Create a Profile"
+             
              x:Class="PittGo.MainPage">
 
-    <StackLayout>
+    <StackLayout
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Spacing="5"
+        Padding="5">
+
+        <Image Source="pittgologo.png"
+               HeightRequest="200"/>
+
+
+
 
         <Label Text="Welcome to PittGo!"
-               FontSize="Medium"
+               FontSize="Large"
                FontAttributes="Bold"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand"/>
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
 
 
         <Label Text="Create an Account"
                FontSize="Medium"
-               FontAttributes="Bold"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand"/>
-        <Button x:Name="countryButton" Text="Go"
-                Clicked="countryButton_Clicked"
-         TextColor="White"                
-         BackgroundColor="Red"/>
+               FontAttributes="Bold" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
 
+        <Entry x:Name="UsernamePlaceholder"
+               Placeholder="Username"/>
+
+        <Entry x:Name="EmailPlaceholder"
+               Placeholder="Email"/>
+
+        <Entry x:Name="PasswordPlaceholder"
+               Placeholder="Password"/>
+       
+        <Button x:Name="SignUpButton" 
+                Text="Sign Up for Free"
+                Clicked="SignUpButton_Clicked"
+         TextColor="Black"                
+         BackgroundColor="Yellow"/>
+       
+        <Label Text="Or"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button x:Name="LogInButton" Text="Log In"
+               Clicked="LogInButton_Clicked"/>
+
+
+       
 
 
 

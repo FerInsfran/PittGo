@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title=" Succesfully Signed Up"
+             x:Class="PittGo.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Spacing="5"
+        Padding="5">
+
+            <Label Text="You are all set to start!"
+               FontSize="Large"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+            <Button x:Name="countryButton" 
+                Text="Go"
+                Clicked="countryButton_Clicked"
+         TextColor="White"                
+         BackgroundColor="Red"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
