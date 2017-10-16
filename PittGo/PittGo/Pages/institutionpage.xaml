@@ -5,9 +5,45 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Institutions" />
-            <!--<Button Image="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjd2Ji61OTWAhWHxYMKHZGJBJUQjRwIBw&url=http%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Frestaurant-logo&psig=AOvVaw1cHhKjuwd2MDv4Y22EF6SO&ust=1507676947494790"
-            Clicked="Button_Clicked"/>-->
+           
 
         </StackLayout>
+        <ListView x:Name="whatareyoulookingforListView"
+                  HasUnevenRows="True"/>
+        <ListView.ItemTemplete>
+            <DataTemplate>
+                <ViewCell>
+                    <stackLayout padding="15">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="*"/>
+                                
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefination Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                
+                            </Grid.ColumnDefinitions>
+                            <Image WidthRequest="50"
+            HeightRequest="50"
+            Source="{}"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.RowSpan="2"/>
+                            <Label Text="{Restaurants}"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+                            <Label Text="{Indian Food}"
+                             Grid.Row="1"
+                                   Grid.Column="1"/>
+
+                        </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplete>
+
     </ContentPage.Content>
 </ContentPage>
