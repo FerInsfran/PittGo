@@ -17,7 +17,7 @@
                HorizontalOptions="Center"/>
 
             <Button x:Name="countryButton" 
-                Text="Go"
+                Text="Go!"
                 Clicked="countryButton_Clicked"
          TextColor="White"                
          BackgroundColor="Red"/>
