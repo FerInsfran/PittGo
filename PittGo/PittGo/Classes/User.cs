@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PittGo.Classes
 {
-    class User
+   public class User
     {
         public int ID { get; set; }
         public string EmailAddress { get; set; }

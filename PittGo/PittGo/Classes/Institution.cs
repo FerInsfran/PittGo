@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PittGo
 {
-    class Institutions
+   public class Institution
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,11 @@ namespace PittGo
         public string restaurants { get; set; }
         public string Paybills { get; set; }
         public string location { get; set; }
+        public string ImageURL { get; set; }
+
+        public string Description { get; set; }
+
+       
 
     }
 }

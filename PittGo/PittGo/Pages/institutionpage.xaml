@@ -4,9 +4,15 @@
              x:Class="PittGo.institutionpage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Institutions" />
+            <Label Text="What are you looking for?"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   TextColor="DarkBlue"
+                   BackgroundColor="Yellow"
+                   FontAttributes="Bold"/>
+            
 
-            <ListView x:Name="whatareyoulookingforListView"
+            <ListView x:Name="whatareyoulookingfor"
                   HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -25,16 +31,16 @@
                                     </Grid.ColumnDefinitions>
                                     <Image WidthRequest="50"
             HeightRequest="50"
-            
+            Source="{Binding ImageURL}"
             Grid.Row="0"
             Grid.Column="0"
             Grid.RowSpan="2"/>
-                                    <Label Text=""
+                                    <Label Text="{Binding Name}"
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="0"
                     Grid.Column="1"/>
-                                    <Label Text=""
+                                    <Label Text="{Binding Description}"
                              Grid.Row="1"
                                    Grid.Column="1"/>
 
