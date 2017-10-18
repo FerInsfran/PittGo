@@ -5,45 +5,45 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Institutions" />
-           
 
-        </StackLayout>
-        <ListView x:Name="whatareyoulookingforListView"
-                  HasUnevenRows="True"/>
-        <ListView.ItemTemplete>
-            <DataTemplate>
-                <ViewCell>
-                    <stackLayout padding="15">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="30"/>
-                                <RowDefinition Height="*"/>
-                                
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefination Width="50"/>
-                                <ColumnDefinition Width="*"/>
-                                
-                            </Grid.ColumnDefinitions>
-                            <Image WidthRequest="50"
+            <ListView x:Name="whatareyoulookingforListView"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+
+                                    </Grid.ColumnDefinitions>
+                                    <Image WidthRequest="50"
             HeightRequest="50"
-            Source="{}"
+            
             Grid.Row="0"
             Grid.Column="0"
             Grid.RowSpan="2"/>
-                            <Label Text="{Restaurants}"
+                                    <Label Text=""
                     FontAttributes="Bold"
                     FontSize="Large"
                     Grid.Row="0"
                     Grid.Column="1"/>
-                            <Label Text="{Indian Food}"
+                                    <Label Text=""
                              Grid.Row="1"
                                    Grid.Column="1"/>
 
-                        </Grid>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplete>
-
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
