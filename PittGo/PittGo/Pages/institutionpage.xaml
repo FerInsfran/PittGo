@@ -7,7 +7,7 @@
             <Label Text="What are you looking for?"
                    HorizontalOptions="Center"
                    FontSize="25"
-                   TextColor="DarkBlue"
+                   TextColor="Red"
                    BackgroundColor="Yellow"
                    FontAttributes="Bold"/>
             
