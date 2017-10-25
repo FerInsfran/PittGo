@@ -4,52 +4,53 @@
              x:Class="PittGo.institutionpage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="What are you looking for?"
-                   HorizontalOptions="Center"
-                   FontSize="25"
-                   TextColor="Red"
-                   BackgroundColor="Yellow"
-                   FontAttributes="Bold"/>
             
-
-            <ListView x:Name="whatareyoulookingfor"
-                  HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="15">
                                 <Grid>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="10"/>
                                         <RowDefinition Height="*"/>
+                                        <RowDefination Height="25"/>
 
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="50"/>
+                </Grid.RowDefinitions>
+                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                                    </Grid.ColumnDefinitions>
-                                    <Image WidthRequest="50"
-            HeightRequest="50"
-            Source="{Binding ImageURL}"
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.RowSpan="2"/>
-                                    <Label Text="{Binding Name}"
-                    FontAttributes="Bold"
-                    FontSize="Large"
-                    Grid.Row="0"
-                    Grid.Column="1"/>
-                                    <Label Text="{Binding Description}"
-                             Grid.Row="1"
-                                   Grid.Column="1"/>
+                        <Image Source="https://image.flaticon.com/icons/png/512/242/242452.png"
+                Grid.Row="1" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_RESTAURANTS" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
 
-                                </Grid>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+
+
+                <Image Source="https://image.freepik.com/free-vector/shopping-basket-full-of-healthy-organic-fresh-food_3446-152.jpg"
+                       Grid.Row="1" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_GROCERIES" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+                <Image Source="http://www.myiconfinder.com/uploads/iconsets/32d3874f0eff8680107e101e2b2ad64d.png"
+                       Grid.Row="1" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_GATHERINGS" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+                <Label Text="RESTAURANTS" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+                    <Label Text="GROCERIES" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+                    <Label Text="GATHERINGS" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>
+
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
