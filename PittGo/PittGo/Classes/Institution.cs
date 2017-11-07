@@ -8,7 +8,7 @@ namespace PittGo
 {
    public class Institution
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string Name { get; set; }
         public string Groceryoptions { get; set; }
         public string Gatheringoptions { get; set; }
@@ -19,9 +19,11 @@ namespace PittGo
 
         public string Description { get; set; }
 
-        
+        public string CountryID { get; set; }
 
-       
+
+
+
 
     }
 }

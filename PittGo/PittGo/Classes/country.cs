@@ -8,7 +8,7 @@ namespace PittGo.Classes
 {
     public class country
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string CountryName { get; set; }
         public string ImageURL { get; set; }
 
