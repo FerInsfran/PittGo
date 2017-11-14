@@ -13,6 +13,12 @@ namespace PittGo
         {
             InitializeComponent();
 
+            if (Settings.UserData != null)
+            {
+                GlobalConfig.LoggedInUser = Settings.UserData;
+            }
+
+            if (GlobalConfig.LoggedInUser != null)
             MainPage = new NavigationPage(new MainPage());
         }
 

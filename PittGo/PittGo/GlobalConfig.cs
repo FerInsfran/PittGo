@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using PittGo.Classes; 
 namespace PittGo
 {
     public static class GlobalConfig
@@ -13,6 +13,6 @@ namespace PittGo
                  new MobileServiceClient(
                   "https://pittgo.azurewebsites.net"
                   );
-
+        public static User LoggedInUser;
     }
 }
