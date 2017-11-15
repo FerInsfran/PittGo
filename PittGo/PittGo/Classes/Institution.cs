@@ -10,9 +10,9 @@ namespace PittGo
     {
         public string ID { get; set; }
         public string Name { get; set; }
-        public string Groceryoptions { get; set; }
-        public string Gatheringoptions { get; set; }
-        public string restaurants { get; set; }
+        public string GROCERIES { get; set; }
+        public string GATHERINGS { get; set; }
+        public string RESTAURANTS { get; set; }
         public string Paybills { get; set; }
         public string location { get; set; }
         public string ImageURL { get; set; }

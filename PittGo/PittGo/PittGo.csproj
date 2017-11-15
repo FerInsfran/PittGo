@@ -49,9 +49,6 @@
     <Compile Include="LogInPage.xaml.cs">
       <DependentUpon>LogInPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AzurePage.xaml.cs">
-      <DependentUpon>AzurePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\institutionpage.xaml.cs">
       <DependentUpon>institutionpage.xaml</DependentUpon>
     </Compile>
@@ -135,12 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SignUpPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Pages\AzurePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
