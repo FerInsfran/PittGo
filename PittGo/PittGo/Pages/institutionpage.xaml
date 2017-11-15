@@ -45,6 +45,8 @@
 
 
                 <Label Text="RESTAURANTS" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+                                    <ListView x:Name="RESTAURANTS" 
+                                              HasUnevenRows="True"
                     <Label Text="GROCERIES" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
                     <Label Text="GATHERINGS" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>
 

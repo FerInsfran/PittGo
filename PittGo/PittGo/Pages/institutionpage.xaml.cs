@@ -12,6 +12,8 @@ namespace PittGo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class institutionpage : ContentPage
+
+        ObservableCollection<Institution> institutionList;
     {
         public ObservableCollection<Institution> Institutions { get; set; }
         public institutionpage(String country)
@@ -54,14 +56,19 @@ namespace PittGo
             Navigation.PushAsync(new country());
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_Tapped_RESTAURANTS(object sender, EventArgs e)
+        {
+            List<RESTAURANTS> databaserestaurants = await GlobalConfig.MobileService.GetTable<RESTAURANTS>().Where(rec => true).ToListAsync();
+        }
+
+        private void TapGestureRecognizer_Tapped_GROCERIES(object sender, EventArgs e)
+        {
+
+        }
+        private void TapGestureRecognizer_Tapped_GATHERINGS(object sender, EventArgs e)
         {
 
         }
 
-        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
