@@ -46,9 +46,6 @@
     </Compile>
     <Compile Include="GlobalConfig.cs" />
     <Compile Include="Helpers\Settings.cs" />
-    <Compile Include="LogInPage.xaml.cs">
-      <DependentUpon>LogInPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\institutionpage.xaml.cs">
       <DependentUpon>institutionpage.xaml</DependentUpon>
     </Compile>
@@ -120,12 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\institutionpage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="LogInPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

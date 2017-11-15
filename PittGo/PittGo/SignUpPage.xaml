@@ -10,15 +10,15 @@
         Spacing="5"
         Padding="5">
 
-            <Label Text="You are all set to start!"
-               FontSize="Large"
-               FontAttributes="Bold"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
+            <Entry x:Name="email"
+               Placeholder="Email"/>
 
-            <Button x:Name="countryButton" 
+            <Entry x:Name="password"
+               Placeholder="Password"/>
+
+            <Button x:Name="UpdateButton" 
                 Text="Go!"
-                Clicked="countryButton_Clicked"
+                Clicked="UpdateButton_Clicked"
          TextColor="White"                
          BackgroundColor="Red"/>
 

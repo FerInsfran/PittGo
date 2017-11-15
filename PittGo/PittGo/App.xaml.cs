@@ -19,6 +19,13 @@ namespace PittGo
             }
 
             if (GlobalConfig.LoggedInUser != null)
+            {
+                Navigation.PushAsync(new LogInPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new SignUpPage());
+            }
             MainPage = new NavigationPage(new MainPage());
         }
 

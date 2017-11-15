@@ -15,10 +15,23 @@ namespace PittGo
         public SignUpPage()
         {
             InitializeComponent();
+
+            if (Settings.UserData != null)
+            {
+                this.email.text = Settings.UserData.EmailAddress;
+                this.password.text = Settings.UserData.Password;
+            }
         }
 
-        private void countryButton_Clicked(object sender, EventArgs e)
+        private void UpdateButton_Clicked(object sender, EventArgs e)
         {
+            User userToSave = new User();
+            userToSave.EmailAddress = this.email.Text;
+            userToSave.Password = this.password.Text;
+
+            Settings.UserData = userToSave;
+
+
             Navigation.PushAsync(new country());
         }
     }
