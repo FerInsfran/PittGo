@@ -24,37 +24,14 @@
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
-
-
-        <Label Text="Create an Account"
-               FontSize="Medium"
-               FontAttributes="Bold" 
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
-
-        <Entry x:Name="UsernamePlaceholder"
-               Placeholder="Username"/>
-
-        <Entry x:Name="EmailPlaceholder"
-               Placeholder="Email"/>
-
-        <Entry x:Name="PasswordPlaceholder"
-               Placeholder="Password"/>
        
         <Button x:Name="SignUpButton" 
-                Text="Sign Up for Free"
+                Text="Sign Up"
                 Clicked="SignUpButton_Clicked"
          TextColor="Black"                
          BackgroundColor="Yellow"/>
        
-        <Label Text="Or"
-               FontSize="Medium"
-               FontAttributes="Bold"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
-
-        <Button x:Name="LogInButton" Text="Log In"
-               Clicked="LogInButton_Clicked"/>
+        
 
 
        

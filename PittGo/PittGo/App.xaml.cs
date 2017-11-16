@@ -13,8 +13,22 @@ namespace PittGo
         {
             InitializeComponent();
 
-
             MainPage = new NavigationPage(new MainPage());
+
+            if (Settings.UserData != null)
+            {
+                GlobalConfig.LoggedInUser = Settings.UserData;
+            }
+
+            if (GlobalConfig.LoggedInUser != null)
+            {
+                Navigation.PushAsync(new country());
+            }
+            else
+            {
+                Navigation.PushAsync(new SignUpPage());
+            }
+        
         }
 
         protected override void OnStart()
