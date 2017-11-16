@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PittGo.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,8 +30,13 @@ namespace PittGo
             userToSave.EmailAddress = this.email.Text;
             userToSave.Password = this.password.Text;
 
+            // Save User to Azure
+
+
+
             Settings.UserData = userToSave;
 
+            //GlobalConfig.LoggedInUser = userToSave;
 
             Navigation.PushAsync(new country());
         }
