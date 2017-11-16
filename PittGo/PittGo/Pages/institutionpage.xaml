@@ -9,7 +9,7 @@
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="10"/>
                                         <RowDefinition Height="*"/>
-                                        <RowDefination Height="25"/>
+                                        <RowDefinition Height="25"/>
 
                 </Grid.RowDefinitions>
                                      <Grid.ColumnDefinitions>
@@ -45,43 +45,51 @@
 
 
                
-                    <Label Text="RESTAURANTS" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+                    <Label Text="RESTAURANTS" TextColor="Black" FontSize="18"  FontAttributes="Bold" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
                     <Label Text="GROCERIES" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
                     <Label Text="GATHERINGS" TextColor="Black" FontSize="18" FontAttributes="Bold"  Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>
 
-                <Label Text="Restaurants List" />
-                <ListView X:Name="Institutionlistview"
-             HasUnevenRows="True">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Padding="15">
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="10"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefination Height="25"/>
-
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Label Text="{Binding Name}"                                          
-                                               FontAttributes="Bold"                                           
-                                               FontSize="12"                                          
-                                               Grid.Row="0"                                           
-                                               Grid.Column="0"/>
-                                        <Label Text="{Binding Description}"              
-                                               Grid.Row="1"
-                                               Grid.Column="0"
-                                               <Label ImageURL="" />
-                                        
-                                    </Grid>
-
-                </ListView>
+                
+                
             </Grid>
+            <ListView x:Name="Institutionlistview"
+                 HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/512/India-icon.png"
+                       Grid.Row="0" Grid.Column="0"/>
+                                    <Label Text="{Binding Name}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
+
+                                    <Label Text="{Binding Description}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+
+
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+
+
+
+            </ListView>
 
         </StackLayout>
     </ContentPage.Content>
