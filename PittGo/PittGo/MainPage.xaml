@@ -24,9 +24,20 @@
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
-       
+        <Entry x:Name="email"
+               Placeholder="Email"/>
+
+        <Entry x:Name="password"
+               Placeholder="Password"/>
+
+        <Button x:Name="LogInButton" 
+                Text="Log In"
+                Clicked="LogInButton_Clicked"
+         TextColor="Black"                
+         BackgroundColor="Yellow"/>
+
         <Button x:Name="SignUpButton" 
-                Text="Sign Up"
+                Text="Create Account"
                 Clicked="SignUpButton_Clicked"
          TextColor="Black"                
          BackgroundColor="Yellow"/>

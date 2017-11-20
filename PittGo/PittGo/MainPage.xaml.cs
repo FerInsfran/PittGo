@@ -22,6 +22,9 @@ namespace PittGo
             Navigation.PushAsync(new SignUpPage());
         }
 
-        
+        private void LogInButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
