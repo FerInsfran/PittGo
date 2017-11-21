@@ -18,7 +18,7 @@
                                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                        <Image Source="https://image.flaticon.com/icons/png/512/242/242452.png"
+                <Image Source="https://t4.ftcdn.net/jpg/00/59/69/95/240_F_59699563_A0mCz2LkgfPHrj0PbAPd0FaccfOrPELQ.jpg"
                 Grid.Row="1" Grid.Column="0">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_RESTAURANTS" NumberOfTapsRequired="1"/>
@@ -27,7 +27,7 @@
 
 
 
-                <Image Source="https://image.freepik.com/free-vector/shopping-basket-full-of-healthy-organic-fresh-food_3446-152.jpg"
+                <Image Source="https://www.charlestonanimalsociety.org/wp-content/uploads/2013/10/shopping_cart_2.png"
                        Grid.Row="1" Grid.Column="1">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_GROCERIES" NumberOfTapsRequired="1"/>
@@ -35,7 +35,7 @@
                 </Image>
 
 
-                <Image Source="http://www.myiconfinder.com/uploads/iconsets/32d3874f0eff8680107e101e2b2ad64d.png"
+                <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbcqY_RSKyOe58xd_-MZMWKEzp0krsbvXZrgYEitU0Fv64Pe2"
                        Grid.Row="1" Grid.Column="2">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_GATHERINGS" NumberOfTapsRequired="1"/>
@@ -73,11 +73,11 @@
                                         <ColumnDefinition Width="*"/>
                                         
                                     </Grid.ColumnDefinitions>
-                                    <Image Source="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/512/India-icon.png"
-                       Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="{Binding Name}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
+                                    <Image Source="{Binding ImageURL}"
+                       Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+                                    <Label Text="{Binding Name}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
 
-                                    <Label Text="{Binding Description}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+                                    <Label Text="{Binding Description}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
 
 
                                 </Grid>
