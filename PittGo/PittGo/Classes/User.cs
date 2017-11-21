@@ -9,9 +9,9 @@ namespace PittGo.Classes
 {
     public class User
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string EmailAddress { get; set; }
-        public int Password { get; set; }
+        public string Password { get; set; }
 
        
 

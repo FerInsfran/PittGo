@@ -17,26 +17,30 @@ namespace PittGo
         {
             InitializeComponent();
 
-            if (Settings.UserData != null)
-            {
-                this.email.text = Settings.UserData.EmailAddress;
-                this.password.text = Settings.UserData.Password;
-            }
+            
         }
 
-        private void UpdateButton_Clicked(object sender, EventArgs e)
+        private async void UpdateButton_Clicked(object sender, EventArgs e)
         {
             User userToSave = new User();
             userToSave.EmailAddress = this.email.Text;
             userToSave.Password = this.password.Text;
 
-            // Save User to Azure
+        
 
+           
+
+            await GlobalConfig.MobileService.GetTable<User>().InsertAsync(userToSave);
+
+            email.Text = "";
+            password.Text = "";
+
+            
 
 
             Settings.UserData = userToSave;
 
-            //GlobalConfig.LoggedInUser = userToSave;
+            GlobalConfig.LoggedInUser = userToSave;
 
             Navigation.PushAsync(new country());
         }

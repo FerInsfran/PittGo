@@ -15,14 +15,10 @@ namespace PittGo
 
             MainPage = new NavigationPage(new MainPage());
 
-
-            // todo:
-            // 1. Create a new "LoginPage" - with a username/password textbox and a login button, and a create account button
-            // 2. create account button needs to go to signup page. 
-            // 3. signup page - when Go button is clicked, add the user to the database in azure, 
-                // set GlobalConfig.LoggedInuser = that new user, Settings.UserData = that new user
-            // 4. login page - authenticate user from azure database
-                // set GlobalConfig.LoggedInuser = that new user, Settings.UserData = that new user
+            //todo:
+            //1. hide password
+            //2. Log Out Button in Country page
+            //3. make the entry larger in sign up page
 
             // Grabbing the user off the phone to see if they are logged in
             if (Settings.UserData != null)
@@ -40,11 +36,11 @@ namespace PittGo
             // This is the case where the user is not logged in
             else
             {
-               // redirect to a login page, that has a button that takes you to a page to create an account
+                // redirect to a login page, that has a button that takes you to a page to create an account
 
-               // Navigation.PushAsync(new SignUpPage());
+                MainPage = new NavigationPage(new MainPage());
+
             }
-        
         }
 
         protected override void OnStart()

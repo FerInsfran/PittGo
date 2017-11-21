@@ -36,5 +36,10 @@ namespace PittGo
         {
             Navigation.PushAsync(new institutionpage("SAUDIARABIA"));
         }
+
+        private void LogOutButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync(new SignUpPage());
+        }
     }
 }
