@@ -22,9 +22,7 @@ namespace PittGo
 
         private async void UpdateButton_Clicked(object sender, EventArgs e)
         {
-            User userToSave = new User();
-            userToSave.EmailAddress = this.email.Text;
-            userToSave.Password = this.password.Text;
+         
 
         
 
@@ -38,7 +36,7 @@ namespace PittGo
             
 
 
-            Settings.UserData = userToSave;
+            
 
             GlobalConfig.LoggedInUser = userToSave;
 

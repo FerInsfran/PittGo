@@ -15,13 +15,13 @@ namespace PittGo
     public partial class institutionpage : ContentPage
     {
         public ObservableCollection<Institution> Institutions { get; set; }
-       
+        public string countrycode;
 
         public institutionpage(String country)
         {
             InitializeComponent();
             this.Institutions = new ObservableCollection<Institution>();
-
+            countrycode = country;
            
 
         }
@@ -34,18 +34,22 @@ namespace PittGo
         private async void TapGestureRecognizer_Tapped_RESTAURANTS(object sender, EventArgs e)
         {
            
-            List<Institution> databaserestaurants = await GlobalConfig.MobileService.GetTable<Institution>().Where(rec => true).ToListAsync();
+            List<Institution> databaserestaurants = await GlobalConfig.MobileService.GetTable<Institution>().Where(rec => rec.type=="RESTAURANTS" && rec.CountryID==countrycode).ToListAsync();
             this.Institutions = new ObservableCollection<Institution>(databaserestaurants);
             Institutionlistview.ItemsSource = this.Institutions;
         }
 
-        private void TapGestureRecognizer_Tapped_GROCERIES(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped_GROCERIES(object sender, EventArgs e)
         {
-
+            List<Institution> databaserestaurants = await GlobalConfig.MobileService.GetTable<Institution>().Where(rec => rec.type == "GROCERIES" && rec.CountryID == countrycode).ToListAsync();
+            this.Institutions = new ObservableCollection<Institution>(databaserestaurants);
+            Institutionlistview.ItemsSource = this.Institutions;
         }
-        private void TapGestureRecognizer_Tapped_GATHERINGS(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped_GATHERINGS(object sender, EventArgs e)
         {
-
+            List<Institution> databaserestaurants = await GlobalConfig.MobileService.GetTable<Institution>().Where(rec => rec.type == "GATHERINGS" && rec.CountryID == countrycode).ToListAsync();
+            this.Institutions = new ObservableCollection<Institution>(databaserestaurants);
+            Institutionlistview.ItemsSource = this.Institutions;
         }
 
     }
