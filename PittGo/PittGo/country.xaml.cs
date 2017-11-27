@@ -37,9 +37,6 @@ namespace PittGo
             Navigation.PushAsync(new institutionpage("F9D1B7E3-683B-4351-B8F5-0975A17EBF9E"));
         }
 
-        private void LogOutButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PopAsync(new SignUpPage());
-        }
+        
     }
 }

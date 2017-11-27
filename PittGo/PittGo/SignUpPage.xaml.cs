@@ -28,7 +28,7 @@ namespace PittGo
 
            
 
-            await GlobalConfig.MobileService.GetTable<User>().InsertAsync(userToSave);
+           
 
             email.Text = "";
             password.Text = "";
@@ -38,7 +38,7 @@ namespace PittGo
 
             
 
-            GlobalConfig.LoggedInUser = userToSave;
+         
 
             Navigation.PushAsync(new country());
         }

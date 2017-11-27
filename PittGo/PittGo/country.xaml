@@ -62,11 +62,7 @@
                 <Label Text="SAUDI ARABIA" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="4" Grid.Column="1" HorizontalOptions="Center"/>
             </Grid>
 
-            <Button x:Name="LogOutButton" 
-                Text="Log Out"
-                Clicked="LogOutButton_Clicked"
-         TextColor="White"                
-         BackgroundColor="Red"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
