@@ -28,6 +28,7 @@
                Placeholder="Email"/>
 
         <Entry x:Name="password"
+               IsPassword="True"
                Placeholder="Password"/>
 
         <Button x:Name="LogInButton" 

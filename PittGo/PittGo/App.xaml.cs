@@ -15,10 +15,7 @@ namespace PittGo
 
             MainPage = new NavigationPage(new MainPage());
 
-            //todo:
-            //1. hide password
-            //2. Log Out Button in Country page
-            //3. make the entry larger in sign up page
+            
 
             // Grabbing the user off the phone to see if they are logged in
             if (Settings.UserData != null)
@@ -41,6 +38,7 @@ namespace PittGo
                 MainPage = new NavigationPage(new MainPage());
 
             }
+            
         }
 
         protected override void OnStart()
