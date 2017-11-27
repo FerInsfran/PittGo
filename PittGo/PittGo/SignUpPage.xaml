@@ -5,15 +5,18 @@
              x:Class="PittGo.SignUpPage">
     <ContentPage.Content>
         <StackLayout
-        HorizontalOptions="CenterAndExpand"
+        
         VerticalOptions="CenterAndExpand"
         Spacing="5"
-        Padding="5">
+        Padding="20">
 
+            <Image Source="createaccounticon.jpg"
+                   HeightRequest="200"/>
             <Entry x:Name="email"
                Placeholder="Email"/>
 
             <Entry x:Name="password"
+                   IsPassword="True"
                Placeholder="Password"/>
 
             <Button x:Name="UpdateButton" 
@@ -21,6 +24,7 @@
                 Clicked="UpdateButton_Clicked"
          TextColor="White"                
          BackgroundColor="Red"/>
+            
 
         </StackLayout>
     </ContentPage.Content>

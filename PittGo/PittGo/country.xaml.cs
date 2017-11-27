@@ -39,7 +39,8 @@ namespace PittGo
 
         private void LogOutButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync(new SignUpPage());
+            Settings.UserData = null;
+            Navigation.PushAsync(new MainPage()); 
         }
     }
 }

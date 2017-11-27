@@ -64,9 +64,9 @@
 
             <Button x:Name="LogOutButton" 
                 Text="Log Out"
-                Clicked="LogOutButton_Clicked"
-         TextColor="White"                
-         BackgroundColor="Red"/>
+               Clicked="LogOutButton_Clicked"
+         TextColor="Black"                
+         BackgroundColor="Yellow"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
