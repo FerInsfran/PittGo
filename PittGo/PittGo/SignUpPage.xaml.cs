@@ -26,22 +26,22 @@ namespace PittGo
             User userToSave = new User();
 
             userToSave.EmailAddress = email.Text;
-            userToSave.Password = password.Text; 
+            userToSave.Password = password.Text;
 
 
 
 
-           
+            await GlobalConfig.MobileService.GetTable<User>().InsertAsync(userToSave);
 
             email.Text = "";
             password.Text = "";
 
-            
 
 
-            
 
-         
+
+
+            GlobalConfig.LoggedInUser = userToSave;
 
             Navigation.PushAsync(new country());
         }
