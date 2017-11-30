@@ -10,10 +10,12 @@
               Aspect="AspectFit"/>
             <Label x:Name="nameLabel"
                    FontSize="Large"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
             <Label x:Name="describtionLabel"
                    FontSize="Large"
-                   FontAttributes="Italic"/>
+                   FontAttributes="Italic"
+                   HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
