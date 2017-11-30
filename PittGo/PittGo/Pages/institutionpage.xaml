@@ -53,7 +53,8 @@
                 
             </Grid>
             <ListView x:Name="Institutionlistview"
-                 HasUnevenRows="True">
+                 HasUnevenRows="True"
+                      ItemSelected="Institutionlistview_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -78,6 +79,9 @@
                                     <Label Text="{Binding Name}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
 
                                     <Label Text="{Binding Description}" TextColor="Black" FontSize="12"  FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
+
+                                    
+
 
 
                                 </Grid>

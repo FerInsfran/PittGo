@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PittGo.Pages;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -52,5 +53,18 @@ namespace PittGo
             Institutionlistview.ItemsSource = this.Institutions;
         }
 
+        private void Institutionlistview_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+
+            Institution selectedinstitution = e.SelectedItem as Institution;
+            (sender as ListView).SelectedItem = null;
+            Navigation.PushAsync(new Extendedpage(selectedinstitution));
+        } 
+
+       
     }
 }
