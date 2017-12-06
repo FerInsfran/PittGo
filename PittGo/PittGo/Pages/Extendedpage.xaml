@@ -12,10 +12,12 @@
             <Label x:Name="nameLabel"
                    FontSize="Large"
                    FontAttributes="Bold"
+                   TextColor="Yellow"
                    HorizontalOptions="Center"/>
             <Label x:Name="describtionLabel"
                    FontSize="Large"
                    FontAttributes="Italic"
+                   TextColor="Yellow"
                    HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
